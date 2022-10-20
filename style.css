@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #090b1a;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.565);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body h1, body h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+main .card {
+  background-color: #1b1938;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+main .card .about {
+  padding: 3%;
+  margin-left: 2.5%;
+}
+
+main .card .about .heading {
+  font-size: 1.3em;
+  color: white;
+  padding-right: 17%;
+  margin: 6% auto 6%;
+}
+
+main .card .about .heading span {
+  color: #aa5cdb;
+}
+
+main .card .about .description {
+  font-size: .7em;
+  padding-right: 10%;
+  margin: 0 0 14%;
+  line-height: 1.5;
+}
+
+main .card .about .stats {
+  font-size: .7em;
+  margin: 8% auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 19%;
+}
+
+main .card .about .stats .info .h-stats {
+  color: white;
+  margin-bottom: 5px;
+}
+
+main .card .about .stats .info .h-title {
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+main .card .img {
+  width: 100%;
+  background-image: url(images/image-header-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+main .card .img::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(170, 92, 219, 0.9);
+  mix-blend-mode: multiply;
+}
+
+main .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    max-width: 86%;
+    margin: 2% auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    border-radius: 6px !important;
+  }
+  .card .about {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+  }
+  .card .about .heading {
+    padding: 3% !important;
+    margin: 2% 3.8% !important;
+  }
+  .card .about .description {
+    padding: 1% 5% !important;
+    margin: 1% 4% !important;
+  }
+  .card .about .stats {
+    padding: 5% 0 !important;
+    margin: 0 !important;
+  }
+  .card .about .stats .info {
+    letter-spacing: 1px;
+    margin: 5% 0 !important;
+  }
+  .card .img {
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: 50%;
+    background-position: center;
+    height: 160px;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
